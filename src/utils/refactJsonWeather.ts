@@ -35,7 +35,8 @@ export const refactJsonWeather = (weathers: any) => {
             const areas = weathers.data.forecast.area.map((area: any, indexArea: number) => {
                 const params = weathers.data.forecast.area[indexArea].parameter?.map((param: any, indexParam: number) => {
                     const  times = weathers.data.forecast.area[indexArea].parameter[indexParam].timerange?.map((timerange: any) => {
-                        const attr = param._attributes.id
+                        const attr = param._attributes.id;
+                        const koversi = convertDateTime(timerange._attributes.datetime);
                         
                         if (attr === 't' || attr === 'tmax' || attr === 'tmin') {
                             const celcius = timerange.value[0]._text;
@@ -43,8 +44,11 @@ export const refactJsonWeather = (weathers: any) => {
             
                             return {
                                 ...timerange._attributes,
-                                celcius: `${celcius} C`,
-                                fahrenheit: `${fahrenheit} F`,
+                                times: `${koversi.time}`,
+                                fulldate: `${koversi.date}`,
+                                date: `${koversi.day}`,
+                                celcius: `${celcius}° C`,
+                                fahrenheit: `${fahrenheit}° F`,
                             };
                         }
 
@@ -82,8 +86,6 @@ export const refactJsonWeather = (weathers: any) => {
                                 value: `${timerange.value._text} ${timerange.value._attributes.unit}`,
                             };
                         }
-
-                        const koversi = convertDateTime(timerange._attributes.datetime);
 
                         return {
                             ...timerange._attributes,
