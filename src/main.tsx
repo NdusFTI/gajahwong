@@ -4,8 +4,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import { 
-    createBrowserRouter, 
-    RouterProvider 
+    RouterProvider,
+    createBrowserRouter 
 } from "react-router-dom";
 
 import { 
@@ -15,7 +15,8 @@ import {
     Cuaca, 
     Bencana, 
     Contact, 
-    NotFound 
+    NotFound,
+    ArtikelDetail
 } from './page';
 
 const router = createBrowserRouter([
@@ -33,6 +34,13 @@ const router = createBrowserRouter([
         path: "/artikel",
         element: <Artikel />,
         errorElement: <NotFound />,
+        children: [
+            {
+                path: ":id",
+                element: <ArtikelDetail />,
+                errorElement: <NotFound />,
+            },
+        ],
     },
     {
         path: "/cuaca",

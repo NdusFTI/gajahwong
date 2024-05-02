@@ -1,6 +1,6 @@
-import { Disclosure }              from '@headlessui/react'
-import { FaXmark,FaBarsStaggered } from 'react-icons/fa6'
-import { useLocation }             from 'react-router-dom';
+import { FaXmark,FaBarsStaggered } from 'react-icons/fa6';
+import { useLocation, Link }       from 'react-router-dom';
+import { Disclosure }              from '@headlessui/react';
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -43,9 +43,9 @@ export const Navbar = () => {
                                 <div className="hidden sm:flex sm:justify-center sm:flex-1">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
-                                            <a 
+                                            <Link
                                                 key={item.name}
-                                                href={item.href}
+                                                to={item.href}
                                                 className={classNames(
                                                     location.pathname === item.href ? 'text-blue-500' : 'text-gray-500',
                                                     'block text-base px-3 py-2 font-medium'
@@ -53,7 +53,7 @@ export const Navbar = () => {
                                                 aria-current={location.pathname === item.href ? 'page' : undefined}
                                             >
                                                 {item.name}
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                 </div>
@@ -66,9 +66,9 @@ export const Navbar = () => {
                         <div className="flex flex-col space-y-1 px-2 pb-3 pt-2 sm:px-3">
                             {navigation.map((item) => (
                                 <Disclosure.Button>
-                                    <a 
+                                    <Link 
                                         key={item.name}
-                                        href={item.href}
+                                        to={item.href}
                                         className={classNames(
                                             location.pathname === item.href ? 'text-blue-500' : 'text-gray-500',
                                             'block text-base px-3 py-2 font-medium'
@@ -76,7 +76,7 @@ export const Navbar = () => {
                                         aria-current={location.pathname === item.href ? 'page' : undefined}
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 </Disclosure.Button>
                             ))}
                         </div>

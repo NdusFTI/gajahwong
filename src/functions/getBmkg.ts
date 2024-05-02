@@ -1,5 +1,6 @@
-import axios from "axios";
-import { xml2js } from "xml-js";
+import axios        from "axios";
+import { xml2js }   from "xml-js";
+
 import { 
     refactJsonWeather,
     toUpperFirstLetterWords

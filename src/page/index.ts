@@ -6,6 +6,7 @@ import { Bencana }  from "./Bencana";
 import { Contact }  from "./Contact";
 import { Loading }  from "./Loading";
 import { NotFound } from "./Not-Found";
+import { ArtikelDetail } from "./ArtikelDetail";
 
 export { 
     Home,
@@ -15,5 +16,6 @@ export {
     Bencana,
     Contact,
     Loading,
-    NotFound
+    NotFound,
+    ArtikelDetail
 };
