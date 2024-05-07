@@ -1,12 +1,14 @@
 [
     {
         "title": "Gelar Kebaktian Anak, GKJ Ambarrukmo Edukasi Sungai bersama PB PALMA",
+        "image": "/src/assets/artikel/artikel1.png",
         "content": "Unit PB PALMA mengadakan acara membersihkan sungai bersama anak-anak sekolah minggu",
         "author": "???"
     },
     {
         "title": "GKJ Ambarrukmo Gelar Kebaktian Anak",
-        "content": "GKJ Ambarrukmo mengadakan kebaktian anak yang diikuti oleh anak-anak sekolah ming",
+        "image": "/src/assets/artikel/artikel1.png",
+        "content": "GKJ Ambarrukmo mengadakan kebaktian anak yang diikuti oleh anak-anak sekolah minggu",
         "author": "???"
     }
 ]

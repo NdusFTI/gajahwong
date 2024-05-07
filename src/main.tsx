@@ -34,13 +34,11 @@ const router = createBrowserRouter([
         path: "/artikel",
         element: <Artikel />,
         errorElement: <NotFound />,
-        children: [
-            {
-                path: ":id",
-                element: <ArtikelDetail />,
-                errorElement: <NotFound />,
-            },
-        ],
+    },
+    {
+        path: "/artikel/:id",
+        element: <ArtikelDetail />,
+        errorElement: <NotFound />,
     },
     {
         path: "/cuaca",

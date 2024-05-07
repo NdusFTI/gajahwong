@@ -14,10 +14,12 @@ export const Footer = () => {
                     <p>© 2024 GajahWong. All rights reserved.</p>
                 </div>
                 <div className="flex gap-5">
-                    {navigation.map((item) => (
-                        <Disclosure.Button className="hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all duration-300">
+                    {navigation.map((item, index) => (
+                        <Disclosure.Button 
+                            key={index}
+                            className="hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-all duration-300"
+                        >
                             <Link 
-                                key={item.name}
                                 to={item.href}
                             >
                                 {item.name}

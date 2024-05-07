@@ -64,10 +64,9 @@ export const Navbar = () => {
                     {/* Mobile Panel */}
                     <Disclosure.Panel>
                         <div className="flex flex-col space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                            {navigation.map((item) => (
-                                <Disclosure.Button>
+                            {navigation.map((item, index) => (
+                                <Disclosure.Button key={index}>
                                     <Link 
-                                        key={item.name}
                                         to={item.href}
                                         className={classNames(
                                             location.pathname === item.href ? 'text-blue-500' : 'text-gray-500',
