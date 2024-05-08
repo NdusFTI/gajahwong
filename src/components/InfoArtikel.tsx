@@ -17,7 +17,7 @@ export const InfoArtikel = () => {
                             </div>
                             <img src={data.image} alt="Test" className="w-full h-1/2 mb-5 rounded-t-lg" />
                             <h1 className="text-xl font-bold">{data.title}</h1>
-                            <p className="text-sm">{data.content}</p>
+                            <p className="text-sm">{data.content[0].substring(0, 70)}</p>
                         </div>
                     ))}
                 </div>

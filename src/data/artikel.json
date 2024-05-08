@@ -1,14 +1,22 @@
 [
     {
+        "date": "11/05/2024",
         "title": "Gelar Kebaktian Anak, GKJ Ambarrukmo Edukasi Sungai bersama PB PALMA",
         "image": "/src/assets/artikel/artikel1.png",
-        "content": "Unit PB PALMA mengadakan acara membersihkan sungai bersama anak-anak sekolah minggu",
-        "author": "???"
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus tellus, pretium ac sapien lacinia, viverra pharetra ex. Fusce hendrerit lorem sed varius elementum. Sed semper dapibus massa, eget pharetra magna consequat eget. Donec molestie tincidunt mollis. Fusce vulputate dolor vulputate enim feugiat, sed rhoncus mi malesuada. Nunc nec lectus erat. Nunc libero ligula, pharetra sit amet interdum at, aliquet non nunc. Donec dui massa, imperdiet sed elementum vel, ultricies nec tellus. Phasellus cursus bibendum odio non placerat. Duis quam erat, maximus ut porttitor vitae, rutrum in quam. Sed rutrum felis ut nisl imperdiet eleifend. Proin mattis, nibh eu auctor placerat, ipsum risus pharetra augue, faucibus consectetur erat enim nec massa. Vivamus bibendum interdum lacus et scelerisque. Morbi aliquet, velit ac mattis elementum, quam erat placerat libero, eget congue eros libero ut lectus.",
+            "Ut venenatis, arcu non porta congue, turpis nisi pellentesque massa, a condimentum risus dui nec eros. Ut nec ante ut orci lobortis malesuada. Integer sem dui, semper et lorem vitae, pretium luctus odio. Maecenas ac enim eu sapien lacinia ultricies a vel est. Sed blandit lorem elit, eu tincidunt tellus vulputate eget. Donec id sagittis tortor, eu vestibulum justo. Nulla leo magna, dictum vel ultrices nec, pellentesque vitae enim. Praesent dui arcu, maximus non sodales ac, vulputate ut libero. Aenean ac dui ut nulla bibendum pharetra eget a justo."
+        ],
+        "author": "Bu. Sri Murwani"
     },
     {
+        "date": "11/05/2024",
         "title": "GKJ Ambarrukmo Gelar Kebaktian Anak",
         "image": "/src/assets/artikel/artikel1.png",
-        "content": "GKJ Ambarrukmo mengadakan kebaktian anak yang diikuti oleh anak-anak sekolah minggu",
-        "author": "???"
+        "content": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus tellus, pretium ac sapien lacinia, viverra pharetra ex. Fusce hendrerit lorem sed varius elementum. Sed semper dapibus massa, eget pharetra magna consequat eget. Donec molestie tincidunt mollis. Fusce vulputate dolor vulputate enim feugiat, sed rhoncus mi malesuada. Nunc nec lectus erat. Nunc libero ligula, pharetra sit amet interdum at, aliquet non nunc. Donec dui massa, imperdiet sed elementum vel, ultricies nec tellus. Phasellus cursus bibendum odio non placerat. Duis quam erat, maximus ut porttitor vitae, rutrum in quam. Sed rutrum felis ut nisl imperdiet eleifend. Proin mattis, nibh eu auctor placerat, ipsum risus pharetra augue, faucibus consectetur erat enim nec massa. Vivamus bibendum interdum lacus et scelerisque. Morbi aliquet, velit ac mattis elementum, quam erat placerat libero, eget congue eros libero ut lectus.",
+            "Ut venenatis, arcu non porta congue, turpis nisi pellentesque massa, a condimentum risus dui nec eros. Ut nec ante ut orci lobortis malesuada. Integer sem dui, semper et lorem vitae, pretium luctus odio. Maecenas ac enim eu sapien lacinia ultricies a vel est. Sed blandit lorem elit, eu tincidunt tellus vulputate eget. Donec id sagittis tortor, eu vestibulum justo. Nulla leo magna, dictum vel ultrices nec, pellentesque vitae enim. Praesent dui arcu, maximus non sodales ac, vulputate ut libero. Aenean ac dui ut nulla bibendum pharetra eget a justo."
+        ],
+        "author": "Bpk. Yohanes Surya"
     }
 ]
