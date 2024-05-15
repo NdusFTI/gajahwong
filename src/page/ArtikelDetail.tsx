@@ -13,10 +13,12 @@ export const ArtikelDetail = () => {
 
     return (
         <>
-            <Navbar />
-            <MarqueeCuaca />
-            <InfoArtikelDetail id={artikelIndex}/>
-            <Footer />
+            <div className="flex flex-col min-h-screen">
+                <Navbar />
+                <MarqueeCuaca />
+                <InfoArtikelDetail id={artikelIndex}/>
+                <Footer className="mt-auto"/>
+            </div>
         </>
     );
 };

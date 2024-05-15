@@ -4,10 +4,12 @@ import { Navbar, MarqueeCuaca, InfoArtikel, Footer } from "../components"
 export const Artikel = () => {
     return (
         <>
-            <Navbar />
-            <MarqueeCuaca />
-            <InfoArtikel />
-            <Footer />
+            <div className="flex flex-col min-h-screen">
+                <Navbar />
+                <MarqueeCuaca />
+                <InfoArtikel />
+                <Footer className="mt-auto"/>
+            </div>
         </>
     )
 }

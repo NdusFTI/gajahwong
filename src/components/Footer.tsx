@@ -1,15 +1,16 @@
-import { Disclosure } from "@headlessui/react";
-import { Link }       from "react-router-dom";
+import { Link }                        from "react-router-dom";
+import { Disclosure }                  from "@headlessui/react";
+import { NavigationItem, FooterProps } from "../types";
 
-const navigation = [
+const navigation: NavigationItem[] = [
     { name: 'Privacy Policy', href: '/' },
-    { name: 'Terms & Conditions', href: '/'},
-]
+    { name: 'Terms & Conditions', href: '/' },
+];
 
-export const Footer = () => {
+export const Footer = ({ className }: FooterProps) => {
     return (
         <>
-            <Disclosure as="footer" className="p-5 flex justify-between">
+            <Disclosure as="footer" className={`p-5 flex justify-between ${className}`}>
                 <div>
                     <p>© 2024 GajahWong. All rights reserved.</p>
                 </div>

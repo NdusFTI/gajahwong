@@ -13,7 +13,7 @@ export const InfoArtikelDetail = ({ id }: { id: number }) => {
                 <p className="text-right mx-5 my-2 text-sm">Tanggal: {selectedArtikel.date}</p>
                 <div>
                     {selectedArtikel.content.map((item, index) => (
-                        <p key={index} className="mb-5 mt-5 text-justify px-24">{item}</p>
+                        <p key={index} className="mb-5 mt-5 text-justify md:px-24 px-10">{item}</p>
                     ))}
                 </div>
             </div>

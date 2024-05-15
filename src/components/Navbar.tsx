@@ -1,8 +1,9 @@
 import { FaXmark,FaBarsStaggered } from 'react-icons/fa6';
 import { useLocation, Link }       from 'react-router-dom';
 import { Disclosure }              from '@headlessui/react';
+import { NavigationItem }          from '../types';
 
-const navigation = [
+const navigation: NavigationItem[] = [
     { name: 'Home', href: '/' },
     { name: 'Lokasi', href: '/lokasi'},
     { name: 'Artikel', href: '/artikel'},
